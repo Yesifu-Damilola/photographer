@@ -1,0 +1,183 @@
+.about {
+  margin-top: 2rem;
+}
+.about h1 {
+  color: #fafafa;
+  text-align: center;
+  justify-content: center;
+  font-size: 56px;
+  font-style: "Cardo", sans-serif;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+.about p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 17px;
+  margin: 0 auto;
+  width: 40%;
+  padding-bottom: 1rem;
+}
+.profile-info {
+  width: 67%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  gap: 1.5rem;
+  padding: 2rem 0rem;
+}
+
+.info-text h1 {
+  top: 0;
+  color: #27a776;
+  font-weight: 900;
+  font-size: 27px;
+  padding-bottom: 24px;
+}
+.info-text .info-para p {
+  font-size: 17px;
+  color: #fafafa;
+  line-height: 1.4;
+  text-align: left;
+  font-style: italic;
+}
+.about-img {
+  padding-top: 0.3rem;
+  margin: 0 auto;
+}
+.about-img img {
+  width: 500px;
+  height: 700px;
+}
+.bio-data {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2.3rem 0rem;
+  text-align: left;
+  color: #fafafa;
+  gap: 2rem;
+}
+.bio-data strong {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 2;
+}
+
+.bio-data span {
+  color: #fafafa;
+  padding-left: 8px;
+  font-size: 17px;
+}
+.bio-data svg {
+  margin-right: 0.5rem;
+  color: #27a776;
+}
+.bio1-info,
+.bio2-info {
+  padding-bottom: 8px;
+}
+.info-text .para1 {
+  font-size: 17px;
+  line-height: 1.5;
+}
+.info-text .para2 {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.para1,
+.para2 {
+  text-align: left;
+  padding-top: 24px;
+}
+
+
+@media (max-width: 1200px) {
+  .about p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .profile-info {
+    flex-direction: column;
+  }
+  .about p {
+    width: 100%;
+  }
+  .about-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .info-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .info-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .bio-data {
+    grid-template-columns: 1fr;
+  }
+
+  .bio1-info strong,
+  .bio2-info strong {
+    width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .about h1 {
+    font-size: 2rem;
+  }
+
+  .about p {
+    width: 90%;
+    font-size: 1.13rem;
+  }
+
+  .hire-link {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .info-text h1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .about h1 {
+    font-size: 1.5rem;
+  }
+
+  .about p {
+    width: 80%;
+    font-size: 1.1rem;
+  }
+
+  .hire-link {
+    padding: 8px 16px;
+    font-size: 0.8rem;
+  }
+
+  .info-text h1 {
+    font-size: 1.4rem;
+  }
+
+  .bio-data {
+    gap: 10px;
+  }
+
+  .bio1-info,
+  .bio2-info {
+    gap: 5px;
+  }
+
+  .para1,
+  .para2 {
+    margin-top: 10px;
+  }
+}

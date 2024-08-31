@@ -1,0 +1,139 @@
+.container h1 {
+  font-size: 43px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  padding-top: 3rem;
+}
+.container h1,
+p {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.container p {
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 30px;
+  font-size: 19px;
+}
+.available {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background-color: #27a776;
+  border: none;
+  border-radius: 4px;
+}
+.hire-link {
+  color: #fff;
+  padding: 12px 28px;
+  font-weight: 400;
+  font-size: 16px;
+  display: inline-block;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.galleries {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.gallery-link :hover {
+  transition: all ease-in-out 0.3s;
+  opacity: 0.3;
+  inset: 0;
+  transform: scale(1.03);
+}
+
+.gallery-link {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.gallery-image {
+  width: 350px;
+  height: 280px;
+  margin: 24px 10px 0px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+  .image-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .hire-link {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .image-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .image-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .hire-link {
+    width: auto;
+    padding: 8px 16px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 10px;
+  }
+
+  .image-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  .hire-link {
+    padding: 6px 12px;
+    font-size: 0.7rem;
+  }
+}
